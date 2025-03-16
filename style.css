@@ -6,7 +6,8 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 :root {
   --bg-color: #080808;
@@ -133,8 +134,8 @@ span {
 }
 
 .home-content p {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: large;
+  font-weight: 700;
   max-width: 1000px;
 }
 
@@ -187,6 +188,7 @@ span {
 
 .text-animation span {
   position: relative;
+  margin-left: 1rem;
 }
 .text-animation span::before {
   content: "Web Developer";
@@ -211,11 +213,11 @@ span {
 @keyframes words {
   0%,
   20% {
-    content: "Frontend Designer";
+    content: "Full-Stack Developer";
   }
   21%,
   40% {
-    content: "Web Designer";
+    content: "Frontend Developer";
   }
   41%,
   60% {
@@ -223,11 +225,11 @@ span {
   }
   61%,
   80% {
-    content: "Web Developer";
+    content: "React Developer";
   }
   81%,
   100% {
-    content: "FullStack Developer";
+    content: "App Developer";
   }
 }
 @keyframes typing {
@@ -295,7 +297,8 @@ span {
   font-size: 2.6rem;
 }
 .about-content p {
-  font-size: 1.6rem;
+  font-size: large;
+  font-weight: 700;
   margin: 2rem 0 3rem;
 }
 .about-content .text-animation span::before {
@@ -323,8 +326,52 @@ span {
   background-color: var(--bg-color);
   width: 50px;
 }
+
+.imgskills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #121212;
+  color: #fff;
+  border-radius: 15px;
+  margin-top: 5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.imgskills img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid transparent;
+  background-color: white;
+}
+
+.imgskills img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  border-color: var(--main-color);
+}
+
+.imgskills img:nth-child(even) {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .services {
-  background: var(--bg-color);
+  background: var(--second-bg-color);
   color: var(--text-color);
 }
 .services h2 {
@@ -601,7 +648,7 @@ span {
   .btn {
     padding: 1rem 2.5rem;
     font-size: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
 
   .text-animation {
@@ -646,5 +693,18 @@ span {
 @media (max-width: 320px) {
   .services-container {
     margin: 0 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .imgskills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 20px;
+    padding: 50px 20px;
+    background-color: #121212;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    justify-items: center;
   }
 }
