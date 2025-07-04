@@ -1,219 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parisan</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <a href="#home" class="logo">Parisan<span>Gholami</span></a>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parisan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
+<body>
+  <header class="header">
+    <a href="#home" class="logo">Parisan<span>Gholami</span></a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-img"><img src="img/me.jpg" alt="meImg" /></div>
+    <div class="home-content">
+      <h1>Hi, It's <span>Parisan</span></h1>
+      <h3 class="text-animation">I'm a<span></span></h3>
+      <p>
+        Welcome to my portfolio! Here, you can explore the projects I’ve
+        worked on, get to know my skills, and learn more about how I can help
+        you build the perfect web solution. Whether you're looking for a
+        dynamic website, a custom web application, or an engaging user
+        experience, I am ready to take on new challenges and create something
+        amazing together.
+      </p>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/parisan-ghlami-2a676b34b/" target="_blank"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/parisan0487" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://www.instagram.com/parisan_0487" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="https://t.me/parisan_0487" target="_blank"><i class="bx bxl-telegram"></i></a>
+      </div>
+
+      <a href="#contact" class="btn">Let’s Work Together</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3 class="text-animation">
+        <span></span>
+      </h3>
+      <p>
+        Hello, I'm Parisan Gholami, a passionate Full-Stack Developer with
+        experience in building modern, responsive websites and web
+        applications. I specialize in front-end technologies like React.js,
+        Next.js, and back-end technologies such as Node.js and MongoDB. I love
+        solving problems with code and always strive to learn new things.
+        Outside of coding, I enjoy reading, exploring new technologies, and
+        helping others with their projects. Let's work together and create
+        something amazing!
+      </p>
+
+      <a href="#projects" class="btn">See My Projects</a>
+    </div>
+
+    <div class="about-img">
+      <img src="img/img.jpg" alt="me" />
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="heading">Skills</h2>
+    <div class="imgskills">
+      <img src="img/html.png" alt="html" />
+      <img src="img/css.png" alt="css" />
+      <img src="img/sass.png" alt="sass" />
+      <img src="img/tailwind.png" alt="tailwindcss" />
+      <img src="img/js.png" alt="js" />
+      <img src="img/react.png" alt="react" />
+      <img src="img/next.svg" alt="next" />
+      <img src="img/typescript.png" alt="typescript" />
+      <img src="img/node.png" alt="node" />
+      <img src="img/mongo.png" alt="mongo" />
+      <img src="img/mysql.jpg" alt="mysql" />
+      <img src="img/express.png" alt="express" />
+      <img src="img/fastify.svg" alt="fastify" />
+      <img src="img/npm.png" alt="npm" />
+      <img src="img/git.png" alt="git" />
+      <img src="img/github.png" alt="github" />
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="heading">Projects</h2>
+    <div class="projects-box">
+
+      <div class="project-card">
+        <img src="img/shop.PNG" alt="shadinaSHop" />
+
+        <h3>HandicraftSHop</h3>
+
+        <p>
+          The handicraft store project is a complete site with a connection to a payment gateway and an admin panel.
+        </p>
+
+        <a href="https://research-pied.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">
+          Review Project
+        </a>
+      </div>
+
+
+      <div class="project-card">
+        <img src="img/modista.PNG" alt="shadinaSHop" />
+
+        <h3>ModistaSHop</h3>
+
+        <p>
+          Mediasta project with advanced UI/UX and excellent performance.
+          Website built with Next.js and Express, fully equipped with all the
+          features.
+        </p>
+
+        <a href="https://teamproject-tau.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">
+          Review Project
+        </a>
+      </div>
+
+      <div class="project-card">
+        <img src="img/project.PNG" alt="shadinaSHop" />
+
+        <h3>ShadinaShop</h3>
+
+        <p>
+          An e-commerce website built with Next.js and Express, fully equipped
+          with all essential features including a shopping cart, wishlist,
+          admin panel, and more.
+        </p>
+
+        <a href="https://shadinashop.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">
+          Review Project
+        </a>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="https://formspree.io/f/mdkekzbb" method="POST">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" />
+        <input type="email" placeholder="Email" />
+      </div>
+
+      <div class="input-box">
+        <input type="number" placeholder="Phone Number" />
+        <input type="text" placeholder="Subject" />
+      </div>
+
+      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn" />
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/parisan-ghlami-2a676b34b/" target="_blank"><i
+          class="bx bxl-linkedin"></i></a>
+      <a href="https://github.com/parisan0487" target="_blank"><i class="bx bxl-github"></i></a>
+      <a href="https://www.instagram.com/parisan_0487" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+      <a href="https://t.me/parisan_0487" target="_blank"><i class="bx bxl-telegram"></i></a>
+    </div>
+
+    <ul class="list">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+
+      <li>
+        <a href="#about">About Me</a>
+      </li>
+
+      <li>
         <a href="#skills">Skills</a>
+      </li>
+
+      <li>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+      </li>
+    </ul>
+  </footer>
 
-    <section class="home" id="home">
-      <div class="home-img"><img src="img/img.jpg" alt="meImg" /></div>
-      <div class="home-content">
-        <h1>Hi, It's <span>Parisan</span></h1>
-        <h3 class="text-animation">I'm a<span></span></h3>
-        <p>
-          Welcome to my portfolio! Here, you can explore the projects I’ve
-          worked on, get to know my skills, and learn more about how I can help
-          you build the perfect web solution. Whether you're looking for a
-          dynamic website, a custom web application, or an engaging user
-          experience, I am ready to take on new challenges and create something
-          amazing together.
-        </p>
+  <script src="script.js"></script>
+</body>
 
-        <div class="social-icons">
-          <a
-            href="https://www.linkedin.com/in/parisan-ghlami-2a676b34b/"
-            target="_blank"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://github.com/parisan0487" target="_blank"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a href="https://www.instagram.com/parisan_0487" target="_blank"
-            ><i class="bx bxl-instagram-alt"></i
-          ></a>
-          <a href="https://t.me/parisan_0487" target="_blank"
-            ><i class="bx bxl-telegram"></i
-          ></a>
-        </div>
-
-        <a href="#contact" class="btn">Let’s Work Together</a>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3 class="text-animation">
-          <span></span>
-        </h3>
-        <p>
-          Hello, I'm Parisan Gholami, a passionate Full-Stack Developer with
-          experience in building modern, responsive websites and web
-          applications. I specialize in front-end technologies like React.js,
-          Next.js, and back-end technologies such as Node.js and MongoDB. I love
-          solving problems with code and always strive to learn new things.
-          Outside of coding, I enjoy reading, exploring new technologies, and
-          helping others with their projects. Let's work together and create
-          something amazing!
-        </p>
-
-        <a href="#projects" class="btn">See My Projects</a>
-      </div>
-
-      <div class="about-img">
-        <img src="img/img.jpg" alt="me" />
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2 class="heading">Skills</h2>
-      <div class="imgskills">
-        <img src="img/html.png" alt="html" />
-        <img src="img/css.png" alt="css" />
-        <img src="img/sass.png" alt="sass" />
-        <img src="img/tailwind.png" alt="tailwindcss" />
-        <img src="img/js.png" alt="js" />
-        <img src="img/react.png" alt="react" />
-        <img src="img/next.svg" alt="next" />
-        <img src="img/typescript.png" alt="typescript" />
-        <img src="img/node.png" alt="node" />
-        <img src="img/express.png" alt="express" />
-        <img src="img/npm.png" alt="npm" />
-        <img src="img/mongo.png" alt="mongo" />
-        <img src="img/git.png" alt="git" />
-        <img src="img/github.png" alt="github" />
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <h2 class="heading">Projects</h2>
-      <div class="projects-box">
-        <div class="project-card">
-          <img src="img/modista.PNG" alt="shadinaSHop" />
-
-          <h3>ModistaSHop</h3>
-
-          <p>
-            Mediasta project with advanced UI/UX and excellent performance.
-            Website built with Next.js and Express, fully equipped with all the
-            features.
-          </p>
-
-          <a
-            href="https://teamproject-tau.vercel.app"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Review Project
-          </a>
-        </div>
-
-        <div class="project-card">
-          <img src="img/project.PNG" alt="shadinaSHop" />
-
-          <h3>ShadinaShop</h3>
-
-          <p>
-            An e-commerce website built with Next.js and Express, fully equipped
-            with all essential features including a shopping cart, wishlist,
-            admin panel, and more.
-          </p>
-
-          <a
-            href="https://shadinashop.vercel.app"
-            class="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Review Project
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-
-      <form action="https://formspree.io/f/mdkekzbb" method="POST">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email" />
-        </div>
-
-        <div class="input-box">
-          <input type="number" placeholder="Phone Number" />
-          <input type="text" placeholder="Subject" />
-        </div>
-
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
-    </section>
-
-    <footer class="footer">
-      <div class="social">
-        <a
-          href="https://www.linkedin.com/in/parisan-ghlami-2a676b34b/"
-          target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a href="https://github.com/parisan0487" target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
-        <a href="https://www.instagram.com/parisan_0487" target="_blank"
-          ><i class="bx bxl-instagram-alt"></i
-        ></a>
-        <a href="https://t.me/parisan_0487" target="_blank"
-          ><i class="bx bxl-telegram"></i
-        ></a>
-      </div>
-
-      <ul class="list">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-
-        <li>
-          <a href="#about">About Me</a>
-        </li>
-
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-      </ul>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
 </html>
