@@ -9,12 +9,14 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 :root {
   --bg-color: #080808;
   --second-bg-color: #101010;
   --text-color: white;
   --main-color: #ca0bf5;
 }
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -38,6 +40,7 @@ body {
   justify-content: space-between;
   z-index: 100;
 }
+
 .logo {
   font-size: 3rem;
   color: var(--text-color);
@@ -74,6 +77,7 @@ body {
   color: var(--main-color);
   display: none;
 }
+
 section {
   min-height: 100vh;
   padding: 10rem 9% 10rem;
@@ -102,6 +106,7 @@ span {
 .logo span {
   color: var(--main-color);
 }
+
 .home-content h3 {
   margin-bottom: 2rem;
   margin-top: 1rem;
@@ -122,11 +127,13 @@ span {
 .home-img img {
   position: relative;
   top: 3rem;
+  width: 34rem;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
+
 .home-img img:hover {
   box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
     0 0 100px var(--main-color);
@@ -179,6 +186,7 @@ span {
   transform: scale(1.05);
   box-shadow: 0 0 50px var(--main-color);
 }
+
 .text-animation {
   font-size: 34px;
   font-weight: 600;
@@ -189,11 +197,13 @@ span {
   position: relative;
   margin-left: 1rem;
 }
+
 .text-animation span::before {
   content: "Web Developer";
   color: var(--main-color);
   animation: words 20s infinite;
 }
+
 .text-animation span::after {
   content: "";
   background-color: var(--bg-color);
@@ -204,34 +214,43 @@ span {
   right: -8px;
   animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
+
 @keyframes cursor {
   to {
     border-left: 2px solid var(--main-color);
   }
 }
+
 @keyframes words {
+
   0%,
   20% {
     content: "Full-Stack Developer";
   }
+
   21%,
   40% {
     content: "Frontend Developer";
   }
+
   41%,
   60% {
     content: "Full-Stack Developer";
   }
+
   61%,
   80% {
     content: "React Developer";
   }
+
   81%,
   100% {
     content: "Full-Stack Developer";
   }
 }
+
 @keyframes typing {
+
   10%,
   15%,
   30%,
@@ -244,6 +263,7 @@ span {
   95% {
     width: 0;
   }
+
   5%,
   20%,
   25%,
@@ -256,6 +276,7 @@ span {
     width: calc(100% + 8px);
   }
 }
+
 .about {
   display: flex;
   justify-content: center;
@@ -264,13 +285,16 @@ span {
   background: var(--second-bg-color);
   color: var(--text-color);
 }
+
 .about h2 span {
   color: var(--main-color);
   text-shadow: 0 0 50px var(--main-color);
 }
+
 .about-img {
   border-radius: 50px;
 }
+
 .about-img img {
   position: relative;
   width: 32vw;
@@ -280,31 +304,38 @@ span {
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
+
 .about-img img:hover {
   box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
     0 0 100px var(--main-color);
 }
+
 .heading {
   text-align: center;
   font-size: 8rem;
 }
+
 .about-content h2 {
   text-align: left;
   line-height: 1.5;
 }
+
 .about-content h3 {
   font-size: 2.6rem;
 }
+
 .about-content p {
   font-size: large;
   font-weight: 700;
   margin: 2rem 0 3rem;
 }
+
 .about-content .text-animation span::before {
   content: "Web Developer";
   color: var(--main-color);
   animation: words 20s infinite;
 }
+
 .about-content .text-animation span::after {
   content: "";
   background-color: var(--second-bg-color);
@@ -315,12 +346,15 @@ span {
   right: -8px;
   animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
+
 ::-webkit-scrollbar {
   width: 15px;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
+
 ::-webkit-scrollbar-track {
   background-color: var(--bg-color);
   width: 50px;
@@ -360,10 +394,12 @@ span {
 }
 
 @keyframes bounce {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -422,21 +458,25 @@ span {
 .contact {
   background-color: var(--bg-color);
 }
+
 .contact h2 {
   margin-bottom: 3rem;
   color: white;
 }
+
 .contact form {
   max-width: 70rem;
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3rem;
 }
+
 .contact form .input-box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .contact form .input-box input,
 .contact form textarea {
   width: 100%;
@@ -449,9 +489,11 @@ span {
   margin: 1rem 0;
   resize: none;
 }
+
 .contact form .btn {
   margin-top: 2rem;
 }
+
 .footer {
   position: relative;
   bottom: 0;
@@ -459,11 +501,13 @@ span {
   padding: 40px 0;
   background-color: var(--main-color);
 }
+
 .footer .social {
   text-align: center;
   padding-bottom: 25px;
   color: white;
 }
+
 .footer .social a {
   font-size: 25px;
   color: white;
@@ -477,11 +521,13 @@ span {
   margin: 0 10px;
   transition: 0.3s ease-in-out;
 }
+
 .footer .social a:hover {
   transform: scale(1.2) translateY(-10px);
   background-color: white;
   color: var(--main-color);
 }
+
 .footer ul {
   margin-top: 0;
   padding: 0;
@@ -490,14 +536,17 @@ span {
   margin-bottom: 0;
   text-align: center;
 }
+
 .footer ul li a {
   color: white;
   box-shadow: 3px solid transparent;
   transition: 0.3s ease-in-out;
 }
+
 .footer ul li a:hover {
   border-bottom: 3px solid white;
 }
+
 .footer ul li {
   display: inline-block;
   padding: 0 15px;
@@ -536,10 +585,12 @@ span {
     padding: 2rem 3%;
   }
 }
+
 @media (max-width: 895px) {
   #menu-icon {
     display: block;
   }
+
   .navbar {
     position: absolute;
     top: 100%;
@@ -569,40 +620,50 @@ span {
     margin: 3rem 0;
     color: white;
   }
+
   .home {
     flex-direction: column;
     margin: 5rem 4rem;
   }
+
   .home-content h3 {
     font-size: 2.6rem;
   }
+
   .home-content h1 {
     font-size: 8rem;
     margin-top: 3rem;
   }
+
   .home-content p {
     max-width: 600px;
     margin: 0 auto;
   }
+
   .home-img img {
     width: 56vw;
     margin-top: -2rem;
   }
+
   .about {
     flex-direction: column-reverse;
   }
+
   .about-content {
     margin: 0 2rem 4rem;
   }
+
   .about img {
     width: 52vw;
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
+
   .services h2 {
     margin-bottom: 3rem;
   }
 }
+
 @media (max-width: 425px) {
   .home {
     flex-direction: column;
@@ -656,6 +717,7 @@ span {
     font-size: 2.2rem;
   }
 }
+
 @media (max-width: 375px) {
   .footer .social {
     padding-bottom: 15px;
@@ -691,11 +753,13 @@ span {
     text-align: center;
   }
 }
+
 @media (max-width: 320px) {
   .services-container {
     margin: 0 2rem;
   }
 }
+
 @media (min-width: 768px) {
   .imgskills {
     display: grid;
