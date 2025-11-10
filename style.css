@@ -411,6 +411,87 @@ span {
   }
 }
 
+
+.certifications {
+  padding: 100px 10%;
+  text-align: center;
+  background: linear-gradient(180deg, #0f0f10 0%, #1a1a1d 100%);
+}
+
+.certifications .heading {
+  font-size: 2.5rem;
+  color: #b066ff;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.certificate-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 25px;
+  padding: 40px 60px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+  gap: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(176, 102, 255, 0.3);
+}
+
+.certificate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 45px rgba(176, 102, 255, 0.3);
+}
+
+.certificate-image img {
+  width: 500px;
+  max-width: 90%;
+  border-radius: 15px;
+  border: 2px solid rgba(176, 102, 255, 0.6);
+}
+
+.certificate-content {
+  max-width: 500px;
+  text-align: left;
+}
+
+.certificate-content h3 {
+  font-size: 1.8rem;
+  color: #b066ff;
+  margin-bottom: 15px;
+}
+
+.certificate-content p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.certificate-content strong {
+  color: #fff;
+}
+
+.certificate-content .btn {
+  background: linear-gradient(90deg, #6a0dad, #b066ff);
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px rgba(176, 102, 255, 0.3);
+}
+
+.certificate-content .btn:hover {
+  background: linear-gradient(90deg, #b066ff, #6a0dad);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(176, 102, 255, 0.5);
+}
+
+
+
 .projects {
   background: var(--second-bg-color);
 }
@@ -778,5 +859,44 @@ span {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     justify-items: center;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .certificate-card {
+    flex-direction: column;
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .certificate-content {
+    text-align: center;
+  }
+
+  .certificate-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .certificate-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .certifications {
+    padding: 70px 5%;
+  }
+
+  .certificate-card {
+    padding: 30px 20px;
+  }
+
+  .certificate-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .certificate-content p {
+    font-size: 0.95rem;
   }
 }
