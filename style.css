@@ -391,7 +391,7 @@ span {
 
 .arcpng {
   padding: 2px;
-  background-color: var(--text-color);
+  background-color: #ccc;
 }
 
 ::-webkit-scrollbar {
@@ -590,7 +590,7 @@ span {
 
 .contact h2 {
   margin-bottom: 3rem;
-  color: white;
+  color: var(--text-color);
 }
 
 .contact form {
