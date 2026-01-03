@@ -2,6 +2,8 @@ let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
+const toggle = document.getElementById("theme-toggle");
+const body = document.body;
 
 window.onscroll = () => {
   sections.forEach((sec) => {
@@ -28,3 +30,21 @@ menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
   navbar.classList.toggle("active");
 };
+
+// load saved theme
+if (localStorage.getItem("theme") === "light") {
+  body.classList.add("light");
+  toggle.classList.replace("bx-moon", "bx-sun");
+}
+
+toggle.addEventListener("click", () => {
+  body.classList.toggle("light");
+
+  if (body.classList.contains("light")) {
+    localStorage.setItem("theme", "light");
+    toggle.classList.replace("bx-moon", "bx-sun");
+  } else {
+    localStorage.setItem("theme", "dark");
+    toggle.classList.replace("bx-sun", "bx-moon");
+  }
+});

@@ -8,6 +8,7 @@
   scroll-behavior: smooth;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 :root {
@@ -16,6 +17,17 @@
   --text-color: white;
   --main-color: #ca0bf5;
 }
+
+body.light {
+  --bg-color: #f9f9f9;
+  --second-bg-color: #ffffff;
+  --text-color: #111111;
+  --main-color: #7a1cff;
+  --header-bg: rgba(255, 255, 255, 0.7);
+  --header-border: rgba(0, 0, 0, 0.08);
+}
+
+
 
 html {
   font-size: 62.5%;
@@ -33,13 +45,15 @@ body {
   left: 0;
   width: 100%;
   padding: 3rem 9%;
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--header-bg);
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 100;
+  border-bottom: 1px solid var(--header-border);
 }
+
 
 .logo {
   font-size: 3rem;
@@ -63,19 +77,46 @@ body {
   margin-left: 4rem;
   font-weight: 500;
   transition: 0.3s ease;
+  opacity: 0.85;
   border-bottom: 3px solid transparent;
 }
+
 
 .navbar a:hover,
 .navbar a.active {
   color: var(--main-color);
   border-bottom: 3px solid var(--main-color);
+  opacity: 1;
 }
 
 #menu-icon {
   font-size: 3.6rem;
   color: var(--main-color);
   display: none;
+}
+
+#theme-toggle {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#theme-toggle {
+  font-size: 2.4rem;
+  color: var(--main-color);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#theme-toggle:hover {
+  transform: rotate(20deg);
 }
 
 section {
@@ -350,7 +391,7 @@ span {
 
 .arcpng {
   padding: 2px;
-  background-color: #fff;
+  background-color: var(--text-color);
 }
 
 ::-webkit-scrollbar {
@@ -372,8 +413,8 @@ span {
   justify-content: center;
   gap: 20px;
   padding: 50px 20px;
-  background-color: #121212;
-  color: #fff;
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
   border-radius: 15px;
   margin-top: 5rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -415,7 +456,8 @@ span {
 .certifications {
   padding: 100px 10%;
   text-align: center;
-  background: linear-gradient(180deg, #0f0f10 0%, #1a1a1d 100%);
+  /* background: linear-gradient(180deg, #0f0f10 0%, #1a1a1d 100%); */
+  background: var(--second-bg-color);
 }
 
 .certifications .heading {
@@ -854,8 +896,8 @@ span {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     gap: 20px;
     padding: 50px 20px;
-    background-color: #121212;
-    color: #fff;
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     justify-items: center;
@@ -898,5 +940,11 @@ span {
 
   .certificate-content p {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 895px) {
+  .header-actions {
+    gap: 1.5rem;
   }
 }
