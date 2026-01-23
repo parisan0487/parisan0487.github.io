@@ -267,27 +267,27 @@ span {
 
   0%,
   20% {
-    content: "Full-Stack Developer";
+    content: "Front-End Developer";
   }
 
   21%,
   40% {
-    content: "Frontend Developer";
+    content: "Next Developer";
   }
 
   41%,
   60% {
-    content: "Full-Stack Developer";
+    content: "React Developer";
   }
 
   61%,
   80% {
-    content: "React Developer";
+    content: "Front-End Developer";
   }
 
   81%,
   100% {
-    content: "Full-Stack Developer";
+    content: "React Developer";
   }
 }
 
